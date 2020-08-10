@@ -96,10 +96,9 @@ border-radius: 3px;
 .popup-phone clickme-phone{
 position: absolute;
 width: 41%;
-height: 61px;
+height: 20%;
 left: 6%;
-top: 230px;
-padding:15px 35px;
+top: 70%;
 background: #000000;
 color: #FFFFFF;
 font-size:20px;
@@ -119,10 +118,9 @@ border-radius: 3px;
 .popup-phone closeme-phone{
 position: absolute;
 width: 41%;
-height: 61px;
+height: 10%;
 left: 53%;
-top: 230px;
-padding:15px 35px;
+top: 70%;
 background: #fbf3f1;
 color: #000000;
 font-size:20px;
