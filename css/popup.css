@@ -1,0 +1,128 @@
+
+
+#popup_this {
+z-index: 100;
+top: 30%;
+position: absolute;
+width: 463px;
+height: 284px;
+background: #FFFFFF;
+mix-blend-mode: normal;
+}
+
+
+#popup_this blackhead {
+position: absolute;
+width: 463px;
+height: 65px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+}
+#popup_this img{
+position: absolute;
+width: 25px;
+height: 25px;
+left: 93.09%;
+right: 1.51%;
+top: 6.69%;
+bottom: 84.51%;
+background: url(img/close-window.png);
+}
+#popup_this clickme{
+position: absolute;
+width: 183px;
+height: 51px;
+left: 137px;
+top: 219px;
+padding:15px 35px;
+background: #000000;
+color: #FFFFFF;
+font-size:16px;
+font-weight:400;
+font-family: 'Montserrat', sans-serif;
+display:inline-block;
+text-align:center;
+border-radius:3px;
+line-height:25px;
+margin-bottom:20px;
+transition:all 0.3s ease-in-out;
+-moz-transition:all 0.3s ease-in-out;
+-webkit-transition:all 0.3s ease-in-out;
+border-radius: 3px;
+}
+
+#popup_this clickme_phone{
+position: absolute;
+width: 189px;
+height: 61px;
+left: 26px;
+top: 200px;
+padding:15px 35px;
+background: #000000;
+color: #FFFFFF;
+font-size:20px;
+font-weight:400;
+font-family: 'Montserrat', sans-serif;
+display:inline-block;
+text-align:center;
+border-radius:3px;
+line-height:25px;
+margin-bottom:20px;
+transition:all 0.3s ease-in-out;
+-moz-transition:all 0.3s ease-in-out;
+-webkit-transition:all 0.3s ease-in-out;
+border-radius: 3px;
+}
+
+#popup_this closeme_phone{
+position: absolute;
+width: 189px;
+height: 61px;
+left: 243px;
+top: 200px;
+padding:15px 35px;
+background: #fbf3f1;
+color: #000000;
+font-size:20px;
+font-weight:400;
+font-family: 'Montserrat', sans-serif;
+display:inline-block;
+text-align:center;
+border-radius:3px;
+line-height:25px;
+margin-bottom:20px;
+transition:all 0.3s ease-in-out;
+-moz-transition:all 0.3s ease-in-out;
+-webkit-transition:all 0.3s ease-in-out;
+border-radius: 3px;
+}
+
+#popup_this textrequest{
+position: absolute;
+width: 381px;
+height: 107px;
+left: 41px;
+top: 88px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+}
+
+
+
+.b-close{
+float: right;
+font-size: 21px;
+font-weight: bold;
+line-height: 1;
+color: #000000;
+text-shadow: 0 1px 0 #ffffff;
+}
