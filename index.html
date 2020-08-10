@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+	<title>Breakthru Films</title>
+    
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/popup.css" rel="stylesheet" type="text/css">
+        
+
+	<script type="text/javascript" src="js/jquery.1.9.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script src="contactform/contactform.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script type="text/javascript" src="js/cookies.js"></script>
+
+
+	<!-- =======================================================
+    Theme Name: Knight
+    Theme URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+	======================================================= -->
+    
+        <script>
+        $(document).ready(function() {
+            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                disableOn: 300,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+
+                fixedContentPos: false
+            });
+        });
+        </script>
+
+
+
+
+
+
+<script>
+ (function(c){c.fn.bPopup=function(A,E){function L(){a.contentContainer=c(a.contentContainer||b);switch(a.content){case "iframe":var d=c('<iframe class="b-iframe" '+a.iframeAttr+"></iframe>");d.appendTo(a.contentContainer);t=b.outerHeight(!0);u=b.outerWidth(!0);B();d.attr("src",a.loadUrl);l(a.loadCallback);break;case "image":B();c("<img />").load(function(){l(a.loadCallback);F(c(this))}).attr("src",a.loadUrl).hide().appendTo(a.contentContainer);break;default:B(),c('<div class="b-ajax-wrapper"></div>').load(a.loadUrl,a.loadData,function(d,b,e){l(a.loadCallback,b);F(c(this))}).hide().appendTo(a.contentContainer)}}function B(){a.modal&&c('<div class="b-modal '+e+'"></div>').css({backgroundColor:a.modalColor,position:"fixed",top:0,right:0,bottom:0,left:0,opacity:0,zIndex:a.zIndex+v}).appendTo(a.appendTo).fadeTo(a.speed,a.opacity);C();b.data("bPopup",a).data("id",e).css({left:"slideIn"==a.transition||"slideBack"==a.transition?"slideBack"==a.transition?f.scrollLeft()+w:-1*(x+u):m(!(!a.follow[0]&&n||g)),position:a.positionStyle||"absolute",top:"slideDown"==a.transition||"slideUp"==a.transition?"slideUp"==a.transition?f.scrollTop()+y:z+-1*t:p(!(!a.follow[1]&&q||g)),"z-index":a.zIndex+v+1}).each(function(){a.appending&&c(this).appendTo(a.appendTo)});G(!0)}function r(){a.modal&&c(".b-modal."+b.data("id")).fadeTo(a.speed,0,function(){c(this).remove()});a.scrollBar||c("html").css("overflow","auto");c(".b-modal."+e).unbind("click");f.unbind("keydown."+e);k.unbind("."+e).data("bPopup",0<k.data("bPopup")-1?k.data("bPopup")-1:null);b.undelegate(".bClose, ."+a.closeClass,"click."+e,r).data("bPopup",null);clearTimeout(H);G();return!1}function I(d){y=k.height();w=k.width();h=D();if(h.x||h.y)clearTimeout(J),J=setTimeout(function(){C();d=d||a.followSpeed;var e={};h.x&&(e.left=a.follow[0]?m(!0):"auto");h.y&&(e.top=a.follow[1]?p(!0):"auto");b.dequeue().each(function(){g?c(this).css({left:x,top:z}):c(this).animate(e,d,a.followEasing)})},50)}function F(d){var c=d.width(),e=d.height(),f={};a.contentContainer.css({height:e,width:c});e>=b.height()&&(f.height=b.height());c>=b.width()&&(f.width=b.width());t=b.outerHeight(!0);u=b.outerWidth(!0);C();a.contentContainer.css({height:"auto",width:"auto"});f.left=m(!(!a.follow[0]&&n||g));f.top=p(!(!a.follow[1]&&q||g));b.animate(f,250,function(){d.show();h=D()})}function M(){k.data("bPopup",v);b.delegate(".bClose, ."+a.closeClass,"click."+e,r);a.modalClose&&c(".b-modal."+e).css("cursor","pointer").bind("click",r);N||!a.follow[0]&&!a.follow[1]||k.bind("scroll."+e,function(){if(h.x||h.y){var d={};h.x&&(d.left=a.follow[0]?m(!g):"auto");h.y&&(d.top=a.follow[1]?p(!g):"auto");b.dequeue().animate(d,a.followSpeed,a.followEasing)}}).bind("resize."+e,function(){I()});a.escClose&&f.bind("keydown."+e,function(a){27==a.which&&r()})}function G(d){function c(e){b.css({display:"block",opacity:1}).animate(e,a.speed,a.easing,function(){K(d)})}switch(d?a.transition:a.transitionClose||a.transition){case "slideIn":c({left:d?m(!(!a.follow[0]&&n||g)):f.scrollLeft()-(u||b.outerWidth(!0))-200});break;case "slideBack":c({left:d?m(!(!a.follow[0]&&n||g)):f.scrollLeft()+w+200});break;case "slideDown":c({top:d?p(!(!a.follow[1]&&q||g)):f.scrollTop()-(t||b.outerHeight(!0))-200});break;case "slideUp":c({top:d?p(!(!a.follow[1]&&q||g)):f.scrollTop()+y+200});break;default:b.stop().fadeTo(a.speed,d?1:0,function(){K(d)})}}function K(d){d?(M(),l(E),a.autoClose&&(H=setTimeout(r,a.autoClose))):(b.hide(),l(a.onClose),a.loadUrl&&(a.contentContainer.empty(),b.css({height:"auto",width:"auto"})))}function m(a){return a?x+f.scrollLeft():x}function p(a){return a?z+f.scrollTop():z}function l(a,e){c.isFunction(a)&&a.call(b,e)}function C(){z=q?a.position[1]:Math.max(430,(y-b.outerHeight(!0))/2-a.amsl);x=n?a.position[0]:(w-b.outerWidth(!0))/2;h=D()}function D(){return{x:w>b.outerWidth(!0),y:y>b.outerHeight(!0)}}c.isFunction(A)&&(E=A,A=null);var a=c.extend({},c.fn.bPopup.defaults,A);a.scrollBar||c("html").css("overflow","hidden");var b=this,f=c(document),k=c(window),y=k.height(),w=k.width(),N=/OS 6(_\d)+/i.test(navigator.userAgent),v=0,e,h,q,n,g,z,x,t,u,J,H;b.close=function(){r()};b.reposition=function(a){I(a)};return b.each(function(){c(this).data("bPopup")||(l(a.onOpen),v=(k.data("bPopup")||0)+1,e="__b-popup"+v+"__",q="auto"!==a.position[1],n="auto"!==a.position[0],g="fixed"===a.positionStyle,t=b.outerHeight(!0),u=b.outerWidth(!0),a.loadUrl?L():B())})};c.fn.bPopup.defaults={amsl:50,appending:!0,appendTo:"body",autoClose:!1,closeClass:"b-close",content:"ajax",contentContainer:!1,easing:"swing",escClose:!0,follow:[!0,!0],followEasing:"swing",followSpeed:500,iframeAttr:'scrolling="no" frameborder="0"',loadCallback:!1,loadData:!1,loadUrl:!1,modal:!0,modalClose:!0,modalColor:"#000",onClose:!1,onOpen:!1,opacity:.7,position:["auto","auto"],positionStyle:"absolute",scrollBar:!0,speed:250,transition:"fadeIn",transitionClose:!1,zIndex:9997}})(jQuery);
+</script>
+
+
+
+<script>
+$( document ).ready(function() {
+
+function poping(){
+		$('#popup_this').bPopup({
+		});
+}
+
+   
+	console.log(Cookies.get('popup_status'));
+	
+	//if (Cookies.get('popup_status') != '1') {
+	if(true){
+	poping();
+	}
+	
+	Cookies.set('popup_status', '1', {
+    expires: 60
+    });
+	});
+
+
+</script>
+
+
+</head>
+<body>
+		<div id="popup_this" style="display: none;">
+			<blackhead>
+			</blackhead>
+		<textrequest>Would you like to join our team and become the </br> painting animator?</textrequest>
+		<a href="https://join.breakthrufilms.pl/en/"><clickme_phone>Click here</clickme_phone></a>
+		<a class="button b-close" href=""><closeme_phone>Close</closeme_phone></a>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+	<header class="header" id="header">
+		<!--header-start-->
+		<div class="container">
+			<figure class="logo animated fadeInDown delay-07s">
+				<a href="#"><img src="img/BreakThru_logo_02.png" alt=""></a>
+			</figure>
+			<h1 class="animated fadeInDown delay-07s">Welcome To Breakthru Films</h1>
+			<ul class="we-create animated fadeInUp delay-1s">
+				<li>We are a film-making company.</li>
+			</ul>
+			<a class="link animated fadeInUp delay-1s servicelink" href="#about">Get Started</a>
+		</div>
+	</header>
+	<!--header-end-->
+
+	<nav class="main-nav-outer" id="test">
+		<!--main-nav-start-->
+		<div class="container">
+			<ul class="main-nav">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#showreel">Showreel</a></li>
+				<li class="small-logo"><a href="#header"><img src="img/BreakThru_logo_02%20small.png" alt=""></a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+	<!--main-nav-end-->
+
+
+
+	<section class="main-section" id="about">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>About</h2>
+            <h6>More facts about Breakthru Films</h6>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 wow fadeInLeft delay-05s">
+                    
+                    
+                    
+                    
+                    
+                    <div id="text-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="row">
+        <div class="col-xs-offset-2 col-xs-8">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-content">
+                        <div>
+                            <p><br>BreakThru Films is known for ground breaking, artistic and commercially succesful animation projects.<br><br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>
+                            <p>Their first major production, Peter and the Wolf, won the Oscar for best animated short, premiered to a sold out Royal Albert Hall, and was a pioneering film in the now popular format of films exhibited in concert halls accompanied by live orchestras.<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>                          
+                            <p><br>BreakThru's most recent film, Loving Vincent, is the world’s first fully painted feature film, and was a success both with film festivals and in terms of worldwide box office. <br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>                          
+                            <p>This $5.5m film grossed $42m from its theatrical release, making it one of the most successful animations of all time for an adult audience. The film picked up 23 Audience Awards at film festivals, including the coveted Annecy Cristal at the world’s biggest animation festival, and was nominated as best feature animation in the world’s most prestigious award events including The Oscars and the Golden Globes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>                          
+                            <p><br>BreakThru are continuing to develop and produce feature films in the Painting Animation technique they pioneereed with Loving Vincent, and will be producing 3 feature films in this technique over the next 10 years. <br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>                          
+                            <p><br>Additionally BreakThru is interested in co-productions with established directors and producers who have feature film projects that they are interested in making in BreakThru’s Painting Animation style.<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>                          
+                            <p>BreakThru Films is a Polish company, located in the North of Poland. The Polish Government and the Polish Film Institute are actively encouraging productions from abroad to co-produce with Poland, and have introduced a scheme that will refund 30% of all costs a film spends in Poland, as well as additionally inviting applications for further discretionary funding from a project’s Polish partner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>                          
+                            <p><br>BreakThru's most recent film, Loving Vincent, is the world’s first fully painted feature film, and was a success both with film festivals and in terms of worldwide box office. <br><br></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
+    <<
+  </a>
+ <a class="right carousel-control" href="#text-carousel" data-slide="next">
+    >>
+  </a>
+
+</div>
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+<!--                    
+<b>BreakThru Films</b> is known for ground breaking, artistic and commercially succesful animation projects. Their first major production, <b>Peter and the Wolf</b>, won the Oscar for best animated short, premiered to a sold out Royal Albert Hall, andwas a pioneering film in the now popular format of films exhibited in concert halls accompanied by live orchestras. 
+<br><br>
+BreakThru's most recent film, <b>Loving Vincent</b>, is the world’s first fully painted feature film, and was a success both with film festivals and in terms of worldwide box office. This $5.5m film grossed $42m from its theatrical release, making it one of the most successful animations of all time for an adult audience. The film picked up 23 Audience Awards at film festivals, including the coveted Annecy Cristal at the world’s biggest animation festival, and was nominated as best feature animation in the world’s most prestigious award events including The Oscars and the Golden Globes.
+<br><br>
+BreakThru are continuing to develop and produce feature films in the Painting Animation technique they pioneereed with Loving Vincent, and will be producing <b>3 feature films</b> in this technique over the next 10 years. Additionally BreakThru is interested in co-productions with established directors and producers who have feature film projects that they are interested in making in BreakThru’s Painting Animation style.
+<br><br>
+<b>BreakThru Films is a Polish company</b>, located in the North of Poland. The Polish Government and the Polish Film Institute are actively encouraging productions from abroad to co-produce with Poland, and have introduced a scheme that will refund 30% of all costs a film spends in Poland, as well as additionally inviting applications for further discretionary funding from a project’s Polish partner.
+-->
+                </div>
+			</div>
+		</div>
+	</section>
+	<!--main-section-end-->
+
+
+
+	<section class="main-section alabaster" id="showreel">
+		<!--main-section alabaster-start-->
+			<div class="container">
+			<h2>Showreel</h2>
+			<h6>See some examples of our work.</h6>
+			<div class="row" style="width:100%; text-align: center;">
+                <iframe src="https://player.vimeo.com/video/346821300" width="640" height="360" style="width:100%; padding-left: 20px;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+
+	</section>
+	<!--main-section alabaster-end-->
+
+
+
+	<section class="main-section paddind" id="portfolio">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>Portfolio</h2>
+			<h6>Some of our works you can see below</h6>
+			<div class="portfolioFilter">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-filter="*" class="current">All</a></li>
+					<li><a href="#" data-filter=".painting">Painting Animation</a></li>
+					<li><a href="#" data-filter=".stop-motion">Stop-Motion</a></li>
+					<li><a href="#" data-filter=".2d">2D animation</a></li>
+					<li><a href="#" data-filter=".drawing">Live-drawing</a></li>
+				</ul>
+			</div>
+
+		</div>
+        
+
+        
+        
+		<div class="portfolioContainer wow fadeInUp delay-04s">
+			<div class=" Portfolio-box painting">
+				<a class="popup-youtube" href="https://www.youtube.com/watch?v=T_f-nNlhnJA?rel=0&ytp-pause-overlay=0"><img src="img/03%20portfolio%20img%2007.jpg" alt=""></a>
+				<h3>Loving Vincent</h3>
+				<p>Painting Animation</p>
+			</div>
+			<div class=" Portfolio-box stop-motion">
+				<a class="popup-youtube" href="https://www.youtube.com/watch?v=WIzj877rbDc?rel=0&ytp-pause-overlay=0"><img src="img/03%20portfolio%20img%2005.jpg" alt=""></a>
+				<h3>Peter and the Wolf</h3>
+				<p>Stop-Motion</p> <!-- WIzj877rbDc -->
+			</div>
+            <div class=" Portfolio-box stop-motion">
+				<a class="popup-youtube" href="https://www.youtube.com/watch?v=bfDcoi6pFGM?rel=0&ytp-pause-overlay=0"><img src="img/03%20portfolio%20img%2001.jpg" alt=""></a>
+				<h3>The Magic Piano</h3>
+				<p>Stop-Motion</p> <!-- bfDcoi6pFGM -->
+			</div>
+			<div class="Portfolio-box stop-motion">
+				<a href="img/03%20portfolio%20img%2002%20big.jpg"><img src="img/03%20portfolio%20img%2002.jpg" alt=""></a>
+				<h3>Spirits of the Piano</h3>
+				<p>Stop-Motion</p>
+			</div>
+			<div class=" Portfolio-box painting">
+				<a class="popup-youtube" href="https://www.youtube.com/watch?v=UXU1D-6Uy6M?rel=0&ytp-pause-overlay=0"><img src="img/03%20portfolio%20img%2003%20copy.jpg" alt=""></a>
+				<h3>Nad ranem</h3>
+				<p>Painting animation</p>
+			</div>
+			<div class=" Portfolio-box 2d">
+				<a href="img/03%20portfolio%20img%2004%20big.jpg"><img src="img/03%20portfolio%20img%2004.jpg" alt=""></a>
+				<h3>Chopin's Drawings</h3>
+				<p>Drawing Animation</p>
+			</div>
+			<div class=" Portfolio-box painting">
+				<a href="img/03%20portfolio%20img%2006%20big.jpg"><img src="img/03%20portfolio%20img%2006.jpg" alt=""></a>
+				<h3>Little Postman</h3>
+				<p>Painting Animation</p>
+			</div>
+			<div class=" Portfolio-box stop-motion">
+				<a href="img/03%20portfolio%20img%2008%20big.jpg"><img src="img/03%20portfolio%20img%2008.jpg" alt=""></a>
+				<h3>Fat Hamster</h3>
+				<p>Stop-motion</p>
+			</div>
+			<div class=" Portfolio-box drawing">
+				<a href="img/03%20portfolio%20img%2009%20big.jpg"><img src="img/03%20portfolio%20img%2009.jpg" alt=""></a>
+				<h3>Three little pigs</h3>
+				<p>Live-drawing</p>
+			</div>
+			<div class=" Portfolio-box drawing">
+				<a href="img/03%20portfolio%20img%2011%20big.jpg"><img src="img/03%20portfolio%20img%2011.jpg" alt=""></a>
+				<h3>PAWS</h3>
+				<p>Live-drawing</p>
+			</div>
+			<div class=" Portfolio-box 2d">
+				<a href="img/03%20portfolio%20img%2010%20big.jpg"><img src="img/03%20portfolio%20img%2010.jpg" alt=""></a>
+				<h3>Animal ABC</h3>
+				<p>2D</p>
+			</div>
+		</div>
+	</section>
+	<!--main-section-end-->
+
+
+	<section class="main-section client-part" id="client">
+		<!--main-section client-part-start-->
+		<div class="container">
+			<b class="quote-right wow fadeInDown delay-03"><i class="fa fa-quote-right"></i></b>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="client-part-haead wow fadeInDown delay-05">Breakthru's most recent film, Loving Vincent, is the world's first fully painted feature film, and was a success both with film festivals and in terms of worldwide box office.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    
+    <section class="main-section team" id="team">
+		<!--main-section team-start-->
+		<div class="container">
+			<h2>team</h2>
+			<h6></h6>
+			<div class="team-leader-block clearfix">
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-03s">
+						<!--<div class="team-leader-shadow"><a href="#"></a></div>-->
+						<img src="img/05%20team%20Hugh.png" alt="">
+						<!--
+                        <ul>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-pinterest"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+                        -->
+					</div>
+					<h3 class="wow fadeInDown delay-03s">Hugh Welchman</h3>
+					<span class="wow fadeInDown delay-03s">Founder</span>
+					<!--<p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>-->
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-06s">
+						<img src="img/05%20team%20Dorota.png" alt="">
+					</div>
+					<h3 class="wow fadeInDown delay-06s">Dorota Kobiela</h3>
+					<span class="wow fadeInDown delay-06s">Creative Director</span>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-09s">
+						<img src="img/05%20team%20Sean.png" alt="">
+					</div>
+					<h3 class="wow fadeInDown delay-09s">Sean Bobbitt</h3>
+					<span class="wow fadeInDown delay-09s">CEO, Producer</span>
+				</div>
+				<div class="team-leader-box tomek">
+					<div class="team-leader wow fadeInDown delay-09s">
+						<img src="img/05%20team%20Tomek.png" alt="">
+					</div>
+					<h3 class="wow fadeInDown delay-09s">Tomasz Wochniak</h3>
+					<span class="wow fadeInDown delay-09s">Studio Manager, Line Producer</span>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-09s">
+						<img src="img/05%20team%20Piotr.png" alt="">
+					</div>
+					<h3 class="wow fadeInDown delay-09s">Piotr Dominiak</h3>
+					<span class="wow fadeInDown delay-09s">Head of Painting Animation</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--main-section team-end-->
+
+
+    <div class="container">
+		<section class="main-section contact" id="contact">
+			<h2>Contact details:</h2>
+			<h6></h6>
+
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 wow fadeInLeft">
+					<div class="contact-info-box address clearfix">
+						<h3><i class=" icon-map-marker"></i>Address:</h3>
+						<span>Breakthru Productions Sp. z o.o.<br>ul. Cieszyńskiego 15-17<br>81-881 Sopot, Poland</span>
+					</div>
+					<div class="contact-info-box phone clearfix">
+						<h3><i class="fa fa-phone"></i>Phone:</h3>
+						<span>+48 58 333-47-33</span>
+					</div>
+					<div class="contact-info-box email clearfix">
+						<h3><i class="fa fa-pencil"></i>email:</h3>
+						<span>office@breakthrufilms.pl</span>
+					</div>
+					<ul class="social-link">
+						<li class="twitter"><a href="https://twitter.com/breakthrufilms"><i class="fa fa-twitter"></i></a></li>
+						<li class="facebook"><a href="https://www.facebook.com/breakthrufilms/"><i class="fa fa-facebook"></i></a></li>
+					</ul>
+				</div>
+				<!--<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+					<div class="form">
+
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+								<div class="validation"></div>
+							</div>
+
+							<div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+						</form>
+					</div>
+				</div>-->
+			</div>
+		</section>
+	</div>
+
+    <div class="container">
+		<section class="main-section partners" id="partners">
+			<h2>Partners:</h2>
+			<h6></h6>
+
+			<div class="row" style="text-align: center;">
+                <div class="col-lg-12 col-sm-12 wow fadeInDown">
+                <figure class="animated fadeInDown delay-05s">
+                    <a href="http://www.sppa.eu" target="_blank"><img src="partners/pa.png" alt="" style="width: 150px;"></a>
+                    <a href="http://www.di-factory.com" target="_blank"><img src="partners/di.png" alt="" style="width: 150px; padding-left: 15px;"></a>  
+                    <a href="http://www.lsw.com.pl" target="_blank"><img src="partners/lsw.png" alt="" style="width: 150px; padding-left: 15px;"></a>
+                    <a href="http://www.arp.gda.pl" target="_blank"><img src="partners/arp.png" alt="" style="width: 150px; padding-left: 15px;"></a>
+                </figure>
+                </div>
+            </div>
+		</section>
+	</div>
+    
+    
+    <footer class="footer">
+		<div class="container">
+			<div class="footer-logo"><a href="#"><img src="img/BreakThru_logo_02.png" alt=""></a></div>
+			<span class="copyright">&copy; Breakthru Productions. All Rights Reserved</span>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+
+			$('#test').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+      $('.Portfolio-box').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+      });
+
+		});
+	</script>
+
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+	</script>
+
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$('.main-nav li a, .servicelink').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 68
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				if ($(window).width() < 768) {
+					$('.main-nav').hide();
+				}
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+
+			var $container = $('.portfolioContainer'),
+				$body = $('body'),
+				colW = 375,
+				columns = null;
+
+
+			$container.isotope({
+				// disable window resizing
+				resizable: true,
+				masonry: {
+					columnWidth: colW
+				}
+			});
+
+			$(window).smartresize(function() {
+				// check if columns has changed
+				var currentColumns = Math.floor(($body.width() - 30) / colW);
+				if (currentColumns !== columns) {
+					// set new column count
+					columns = currentColumns;
+					// apply width to container manually, then trigger relayout
+					$container.width(columns * colW)
+						.isotope('reLayout');
+				}
+
+			}).smartresize(); // trigger resize to set container width
+			$('.portfolioFilter a').click(function() {
+				$('.portfolioFilter .current').removeClass('current');
+				$(this).addClass('current');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+
+					filter: selector,
+				});
+				return false;
+			});
+
+		});
+	</script>
+	
+<script>
+
+
+
+$(document).ready(function() {
+  
+
+    $(".overlayLink").click(function(event){
+        event.preventDefault();
+        var action = $(this).attr('data-action');
+
+        $(".overlay").fadeToggle("fast");
+    });
+
+    $(".close").click(function(){
+        $(".overlay").fadeToggle("fast");
+    });
+
+    
+});
+
+</script>
+</body>
+
+</html>
