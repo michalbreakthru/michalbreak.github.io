@@ -84,9 +84,10 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 		}
 	});
 
-} else
+} else{
 
-	$('.popup-fade').fadeIn();
+
+	   $('.popup-fade').fadeIn();
 
 	$('.popup-close').click(function() {
 		$(this).parents('.popup-fade').fadeOut();
@@ -109,7 +110,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 			$(this).fadeOut();					
 		}
 	});
-
+}
 });
 
 </script>
@@ -121,7 +122,12 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 <div class="popup-fade" >
 	<div class="popup">
 			<blackhead>
-			<a class="popup-close", href=""><img src="img/close-window.png"></a>
+			<a class="popup-close", style="float: right;
+			font-size: 21px;
+			font-weight: bold;
+			line-height: 1;
+			color: #000000;
+			text-shadow: 0 1px 0 #ffffff;", href=""><img src="img/close-window.png"></a>
 			</blackhead>
 		<textrequest>Would you like to join our team and become the </br> painting animator?</textrequest>
 		<a href="https://join.breakthrufilms.pl/en/"><clickme>Click here</clickme></a>
@@ -134,6 +140,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 			</blackhead-phone>
 		<textrequest>Would you like to join our team and become the </br> painting animator?</textrequest>
 		<a href="https://join.breakthrufilms.pl/en/"><clickme-phone>Click here</clickme-phone></a>
+		<a class="popup-close", href=""><closeme-phone>Close</closeme-phone></a>
 	</div>		
 </div>
 
