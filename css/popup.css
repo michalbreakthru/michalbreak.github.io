@@ -1,17 +1,34 @@
-
-
-#popup_this {
-z-index: 100;
-top: 30%;
+.popup-fade {
+	display: none;
+}
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: 100;
+	
+}
+.popup {
 position: absolute;
+z-index: 101;
+top: 58%;
 width: 463px;
 height: 284px;
+position: absolute;
+top: 62%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
 background: #FFFFFF;
 mix-blend-mode: normal;
 }
 
-
-#popup_this blackhead {
+.popup blackhead {
 position: absolute;
 width: 463px;
 height: 65px;
@@ -20,7 +37,7 @@ top: 0px;
 
 background: #000000;
 }
-#popup_this img{
+.popup img{
 position: absolute;
 width: 25px;
 height: 25px;
@@ -30,7 +47,7 @@ top: 6.69%;
 bottom: 84.51%;
 background: url(img/close-window.png);
 }
-#popup_this clickme{
+.popup clickme{
 position: absolute;
 width: 183px;
 height: 51px;
@@ -53,7 +70,7 @@ transition:all 0.3s ease-in-out;
 border-radius: 3px;
 }
 
-#popup_this clickme_phone{
+.popup clickme_phone{
 position: absolute;
 width: 189px;
 height: 61px;
@@ -76,7 +93,7 @@ transition:all 0.3s ease-in-out;
 border-radius: 3px;
 }
 
-#popup_this closeme_phone{
+.popup closeme_phone{
 position: absolute;
 width: 189px;
 height: 61px;
@@ -99,7 +116,7 @@ transition:all 0.3s ease-in-out;
 border-radius: 3px;
 }
 
-#popup_this textrequest{
+.popup textrequest{
 position: absolute;
 width: 381px;
 height: 107px;
@@ -116,9 +133,7 @@ text-align: center;
 color: #000000;
 }
 
-
-
-.b-close{
+.popup-close {
 float: right;
 font-size: 21px;
 font-weight: bold;
