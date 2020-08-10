@@ -17,8 +17,23 @@
 position: absolute;
 z-index: 101;
 top: 58%;
-width: 95%;
+width: 463px;
 height: 284px;
+position: absolute;
+top: 62%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+background: #FFFFFF;
+mix-blend-mode: normal;
+}
+
+.popup-phone {
+position: absolute;
+z-index: 101;
+top: 58%;
+width: 95%;
+height: 58%;
 position: absolute;
 top: 62%;
 left: 50%;
@@ -34,9 +49,18 @@ width: 463px;
 height: 65px;
 left: 0px;
 top: 0px;
-
 background: #000000;
 }
+
+.popup-phone blackhead-phone {
+position: absolute;
+width: 95%;
+height: 13%;
+left: 0px;
+top: 0px;
+background: #000000;
+}
+
 .popup img{
 position: absolute;
 width: 25px;
@@ -70,7 +94,7 @@ transition:all 0.3s ease-in-out;
 border-radius: 3px;
 }
 
-.popup clickme_phone{
+.popup-phone clickme-phone{
 position: absolute;
 width: 189px;
 height: 61px;
