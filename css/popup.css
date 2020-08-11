@@ -38,7 +38,6 @@ left: 50%;
 margin-right: -50%;
 transform: translate(-50%, -50%);
 background: #FFFFFF;
-
 mix-blend-mode: normal;
 }
 
@@ -103,16 +102,8 @@ background: #000000;
 color: #FFFFFF;
 font-size: 200%;
 font-family: 'Montserrat', sans-serif;
-display:inline-block;
 text-align:center;
- padding: 4% 0;
-border-radius:3px;
-line-height:25px;
-margin-bottom:20px;
-transition:all 0.3s ease-in-out;
--moz-transition:all 0.3s ease-in-out;
--webkit-transition:all 0.3s ease-in-out;
-border-radius: 3px;
+padding-top:4.5%;
 }
 
 .popup-phone closeme-phone{
@@ -123,19 +114,9 @@ left: 53%;
 top: 75%;
 background: #fbf3f1;
 font-size: 200%;
-color: #000000;
-font-weight:400px;
 font-family: 'Montserrat', sans-serif;
-display:inline-block;
 text-align:center;
- padding: 4% 0;
-border-radius:3px;
-line-height:25px;
-margin-bottom:20px;
-transition:all 0.3s ease-in-out;
--moz-transition:all 0.3s ease-in-out;
--webkit-transition:all 0.3s ease-in-out;
-border-radius: 3px;
+padding-top:4.5%;
 }
 
 .popup textrequest{

@@ -2,7 +2,7 @@ $(document).ready(function($) {
 	
 function NewPopUp(){
 var width = $(document).width();
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) && width < 650) {
+if (width < 650 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 $('.popup-fade-phone').fadeIn();
 
 	$('.popup-close-phone').click(function() {
@@ -28,7 +28,8 @@ $('.popup-fade-phone').fadeIn();
 	});
 
 
-} else{
+} 
+else{
 
 
 $('.popup-fade').fadeIn();
