@@ -2,7 +2,8 @@ $(document).ready(function($) {
 	
 function NewPopUp(){
 var width = $(document).width();
-if (width < 1300 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+var height = $(document).height();
+if (height>width && /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 $('.popup-fade-phone').fadeIn();
 
 	$('.popup-close-phone').click(function() {
