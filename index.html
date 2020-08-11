@@ -59,7 +59,10 @@
 		$(function() {
 		  $(window).resize(function() {
 			$('.popup-fade-phone').fadeOut();
-			$('.popup-fade').fadeOut();
+			Cookies.set('popup_status', '0', {
+			expires: 60
+			});
+			
 		  });
 		});
 		</script>
