@@ -60,6 +60,31 @@
 $(document).ready(function($) {
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 
+$('.popup-fade-phone').fadeIn();
+
+	$('.popup-close').click(function() {
+		$(this).parents('.popup-fade-phone').fadeOut();
+		return false;
+	});		
+
+ 
+
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade-phone').fadeOut();
+		}
+	});
+
+	
+
+	$('.popup-fade-phone').click(function(e) {
+		if ($(e.target).closest('.popup-phone').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+
+} else{
 $('.popup-fade').fadeIn();
 
 	$('.popup-close').click(function() {
@@ -83,32 +108,7 @@ $('.popup-fade').fadeIn();
 			$(this).fadeOut();					
 		}
 	});
-
-} else{
-
- $('.popup-fade-phone').fadeIn();
-
-	$('.popup-close').click(function() {
-		$(this).parents('.popup-fade-phone').fadeOut();
-		return false;
-	});		
-
  
-
-	$(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade-phone').fadeOut();
-		}
-	});
-
-	
-
-	$('.popup-fade-phone').click(function(e) {
-		if ($(e.target).closest('.popup-phone').length == 0) {
-			$(this).fadeOut();					
-		}
-	});
 	   
 }
 });
