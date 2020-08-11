@@ -1,23 +1,72 @@
- function getCookie(name) { 
- var cookie = " " + document.cookie; 
- var search = " " + name + "="; 
- var setStr = null; 
- var offset = 0; 
- var end = 0; 
- if (cookie.length > 0) { 
- offset = cookie.indexOf(search); 
- if (offset != -1) { 
- offset += search.length; 
- end = cookie.indexOf(";", offset);
- if (end == -1) { 
- end = cookie.length; 
- } 
- setStr = unescape(cookie.substring(offset, end)); 
- } 
- } 
- return(setStr); 
+$(document).ready(function($) {
+	
+function NewPopUp(){
+var width = $(document).width();
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) && width < 650) {
+$('.popup-fade-phone').fadeIn();
+
+	$('.popup-close-phone').click(function() {
+		$(this).parents('.popup-fade-phone').fadeOut();
+		return false;
+	});		
+
+ 
+
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade-phone').fadeOut();
+		}
+	});
+
+	
+
+	$('.popup-fade-phone').click(function(e) {
+		if ($(e.target).closest('.popup-phone').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+
+
+} else{
+
+
+$('.popup-fade').fadeIn();
+
+	$('.popup-close').click(function() {
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});		
+
+ 
+
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade').fadeOut();
+		}
+	});
+
+	
+
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+
+	   
 }
-  
- function setCookie(name, value) { 
- document.cookie = name + "=" + value;
 }
+
+	console.log(Cookies.get('popup_status'));
+	
+	if (Cookies.get('popup_status') != '1') {
+	NewPopUp();
+	}
+	
+	Cookies.set('popup_status', '1', {
+    expires: 60
+    });
+	
+});

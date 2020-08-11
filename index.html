@@ -28,6 +28,7 @@
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/promo-popup.js"></script>
 	<script src="contactform/contactform.js"></script>
 	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
@@ -54,68 +55,15 @@
             });
         });
         </script>
-
-<script>
-
-$(document).ready(function($) {
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-$('.popup-fade-phone').fadeIn();
-
-	$('.popup-close-phone').click(function() {
-		$(this).parents('.popup-fade-phone').fadeOut();
-		return false;
-	});		
-
- 
-
-	$(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
+		<script>
+		$(function() {
+		  $(window).resize(function() {
 			$('.popup-fade-phone').fadeOut();
-		}
-	});
-
-	
-
-	$('.popup-fade-phone').click(function(e) {
-		if ($(e.target).closest('.popup-phone').length == 0) {
-			$(this).fadeOut();					
-		}
-	});
-
-
-} else{
-
-
-$('.popup-fade').fadeIn();
-
-	$('.popup-close').click(function() {
-		$(this).parents('.popup-fade').fadeOut();
-		return false;
-	});		
-
- 
-
-	$(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
 			$('.popup-fade').fadeOut();
-		}
-	});
+		  });
+		});
+		</script>
 
-	
-
-	$('.popup-fade').click(function(e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();					
-		}
-	});
-
-	   
-}
-});
-
-</script>
 
 
 </head>
