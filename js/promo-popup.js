@@ -2,8 +2,9 @@ $(document).ready(function($) {
 	
 function NewPopUp(){
 var width = $(document).width();
-var height = $(document).height();
-if (height>width && /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+console.log(width);
+if (width < 5000 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+
 $('.popup-fade-phone').fadeIn();
 
 	$('.popup-close-phone').click(function() {
@@ -60,8 +61,6 @@ $('.popup-fade').fadeIn();
 	   
 }
 }
-
-	console.log(Cookies.get('popup_status'));
 	
 	if (Cookies.get('popup_status') != '1') {
 	NewPopUp();
