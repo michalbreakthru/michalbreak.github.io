@@ -92,7 +92,8 @@ transition:all 0.3s ease-in-out;
 border-radius: 3px;
 }
 
-.popup-phone clickme-phone{
+
+.popup-clickme-phone{
 position: absolute;
 width: 41%;
 height: 20%;
@@ -103,10 +104,10 @@ color: #FFFFFF;
 font-size: 200%;
 font-family: 'Montserrat', sans-serif;
 text-align:center;
-padding-top:4.5%;
+vertical-align:middle;
 }
 
-.popup-phone closeme-phone{
+.popup-close-phone{
 position: absolute;
 width: 41%;
 height: 20%;
@@ -116,7 +117,7 @@ background: #fbf3f1;
 font-size: 200%;
 font-family: 'Montserrat', sans-serif;
 text-align:center;
-padding-top:4.5%;
+vertical-align:middle;
 }
 
 .popup textrequest{
