@@ -11,6 +11,8 @@ var clickpc = "Click here";
 var urlpc = "https://join.breakthrufilms.pl/en/"; 
 var closephone = "Close"; 
 
+console.log(language);
+
 if(language=="pl"){
 var textpc = "Chcesz dołączyć do naszego zespołu i zostać </br>animatorem?"; 
 var clickpc = "Tak"; 
@@ -18,7 +20,7 @@ var urlpc = "https://join.breakthrufilms.pl/";
 var closephone = "Nie"; 
 }
 
-if(language=="ua"){
+if(language=="uk"){
 var textpc = "Ви хочете приєднатися до нашої команди та стати </br> аніматором?"; 
 var clickpc = "Так"; 
 var urlpc = "https://join.breakthrufilms.pl/ua/"; 
