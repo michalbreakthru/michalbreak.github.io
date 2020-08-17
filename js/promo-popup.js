@@ -14,11 +14,16 @@ var closephone = "Close";
 if(language=="pl"){
 var textpc = "Chcesz dołączyć do naszego zespołu i zostać </br>animatorem?"; 
 var clickpc = "Tak"; 
-var urlpc = "https://join.breakthrufilms.pl/pl/"; 
+var urlpc = "https://join.breakthrufilms.pl/"; 
 var closephone = "Nie"; 
 }
 
-
+if(language=="ua"){
+var textpc = "Ви хочете приєднатися до нашої команди та стати </br> аніматором?"; 
+var clickpc = "Так"; 
+var urlpc = "https://join.breakthrufilms.pl/ua/"; 
+var closephone = "Ні"; 
+}
 
 
 if (Cookies.get('popup_status') != '1'){
