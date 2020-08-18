@@ -1,6 +1,7 @@
 .popup-fade, .popup-fade-phone{
 	display: none;
 }
+
 .popup-fade:before, .popup-fade-phone:before {
 	content: '';
 	background: #000;
@@ -11,10 +12,9 @@
 	height: 100%;
 	opacity: 0.7;
 	z-index: 3999;
-	
 }
+
 .popup {
-position: absolute;
 z-index: 4000;
 top: 58%;
 width: 463px;
@@ -68,9 +68,6 @@ right: 1.51%;
 top: 6.69%;
 bottom: 84.51%;
 background: url(img/close-window.png);
-}
-.popup clickme{
-
 }
 
 .popup-clickme-phone{
@@ -151,7 +148,6 @@ opacity: 0.2;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-
 
 .popup clickme {
 position: absolute;
