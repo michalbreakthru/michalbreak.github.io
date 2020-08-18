@@ -27,8 +27,8 @@ var urlpc = "https://join.breakthrufilms.pl/ua/";
 var closephone = "Ні"; 
 }
 
-
-if (Cookies.get('popup_status') != '1'){
+//Cookies.get('popup_status') != '1'
+if (true){
 var width = $(document).width();
 console.log(width);
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {

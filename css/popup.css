@@ -70,26 +70,7 @@ bottom: 84.51%;
 background: url(img/close-window.png);
 }
 .popup clickme{
-position: absolute;
-width: 183px;
-height: 51px;
-left: 137px;
-top: 219px;
-padding:15px 35px;
-background: #000000;
-color: #FFFFFF;
-font-size:16px;
-font-weight:400;
-font-family: 'Montserrat', sans-serif;
-display:inline-block;
-text-align:center;
-border-radius:3px;
-line-height:25px;
-margin-bottom:20px;
-transition:all 0.3s ease-in-out;
--moz-transition:all 0.3s ease-in-out;
--webkit-transition:all 0.3s ease-in-out;
-border-radius: 3px;
+
 }
 
 .popup-clickme-phone{
@@ -169,4 +150,35 @@ opacity: 0.2;
   cursor: pointer;
   opacity: 0.5;
   filter: alpha(opacity=50);
+}
+
+
+.popup clickme {
+position: absolute;
+width: 183px;
+height: 51px;
+left: 137px;
+top: 219px;
+padding:15px 35px;
+background: #000000;
+color: #FFFFFF;
+font-size:16px;
+font-weight:400;
+font-family: 'Montserrat', sans-serif;
+display:inline-block;
+text-align:center;
+line-height:25px;
+margin-bottom:20px;
+-webkit-transition:all 0.3s ease-in-out;
+border-radius: 3px;
+cursor: pointer;
+}
+.popup clickme:hover
+{
+    box-shadow: 0px 15px 25px -5px rgba(darken(dodgerblue, 40%));
+    transform: scale(1.03);
+}
+.popup clickme:active {
+    box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+    transform: scale(.98);
 }
